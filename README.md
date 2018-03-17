@@ -9,19 +9,20 @@ Time spent: **X** hours spent in total
 ## Pentesting Report
 
 1. (Required) Vulnerability Name or ID
-[!] Title: WordPress <= 4.2 - Unauthenticated Stored Cross-Site Scripting (XSS)
-    Reference: https://wpvulndb.com/vulnerabilities/7945
-    Reference: http://klikki.fi/adv/wordpress2.html
-    Reference: http://packetstormsecurity.com/files/131644/
-    Reference: https://www.exploit-db.com/exploits/36844/
-[i] Fixed in: 4.2.1
+[!] Title: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/7965
+    Reference: https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss-millions-of-wordpress-websites-affected-millions-of-wordpress-websites-affected.html
+    Reference: http://packetstormsecurity.com/files/131802/
+    Reference: http://seclists.org/fulldisclosure/2015/May/41
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3429
+[i] Fixed in: 1.2
 
-  - [x] Summary: stored XSS. An unauthenticated attacker can inject JavaScript in WordPress comments. The script is triggered when the comment is viewed.
-    - Vulnerability types: stored XSS
+  - [x] Summary: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)
+    - Vulnerability types: DOM XSS
     - Tested in version: 4.2
-    - Fixed in version: 4.2.1
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+    - Fixed in version: ?
+  - [x] GIF Walkthrough: [see here](https://github.com/alfasin/week7-wp/blob/master/CVE1.gif)
+  - [x] Steps to recreate: simply go to: http://wpdistillery.vm/wp-content/themes/twentyfifteen/genericons/example.html#1<img/ src=1 onerror= alert(1)>
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
