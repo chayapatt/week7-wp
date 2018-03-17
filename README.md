@@ -45,14 +45,27 @@ Time spent: **X** hours spent in total
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
     
 3. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+[!] Title: WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+    Reference: https://wpvulndb.com/vulnerabilities/8765
+    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/
+    Reference: https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7
+    Reference: https://sumofpwn.nl/advisory/2016/wordpress_audio_playlist_functionality_is_affected_by_cross_site_scripting.html
+    Reference: http://seclists.org/oss-sec/2017/q1/563
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6814
+[i] Fixed in: 4.2.13
+
+  - [x] Summary: stored xss using media-file metadata and audio playlist
+    - Vulnerability types: stored xss
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.13
+  - [x] GIF Walkthrough: [see here](https://github.com/alfasin/week7-wp/blob/master/CVE3.gif)
+  - [x] Steps to recreate: 
+        - upload [xss.mp3](https://github.com/alfasin/week7-wp/blob/master/xss.mp3) to the media tab
+        - go to the post and click on "add media
+        - click on the option of "create audio playlist"
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
+    
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
