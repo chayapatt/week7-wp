@@ -23,9 +23,10 @@ Time spent: **X** hours spent in total
     - Fixed in version: ?
   - [x] GIF Walkthrough: [see here](https://github.com/alfasin/week7-wp/blob/master/CVE1.gif)
   - [x] Steps to recreate: simply go to: `http://wpdistillery.vm/wp-content/themes/twentyfifteen/genericons/example.html#1<img/ src=1 onerror= alert(1)>`
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+  - [x] Affected source code:
+    - [Link 1](https://github.com/Automattic/Genericons/commit/798ac98579dd72dfdb11bdee3e7bebf01cffb1f7)
+    
+2. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
