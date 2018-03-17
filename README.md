@@ -27,15 +27,24 @@ Time spent: **X** hours spent in total
     - [Link 1](https://github.com/Automattic/Genericons/commit/798ac98579dd72dfdb11bdee3e7bebf01cffb1f7)
     
 2. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+[!] Title: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+    Reference: https://wpvulndb.com/vulnerabilities/8768
+    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/
+    Reference: https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8
+    Reference: https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6817
+[i] Fixed in: 4.2.13
+
+  - [x] Summary: Stored XSS using encoded links in the Post body
+    - Vulnerability types: Stored XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.7.3
+  - [x] GIF Walkthrough: [see here](https://github.com/alfasin/week7-wp/blob/master/CVE2.gif)
+  - [x] Steps to recreate: edit a post, use the 'text' tab (not visual!) and add the following string: `[embed src='https://www.youtube.com/embed/U2lZIUZ_ZwU\x3csvg onload=alert(1)\x3e'][/embed]` then go to the post-page
+  - [x] Affected source code:
+    - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
+    
+3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
