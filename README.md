@@ -21,7 +21,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: DOM XSS
     - Tested in version: 4.2
     - Fixed in version: ?
-  - [x] GIF Walkthrough: [see here](https://github.com/alfasin/week7-wp/blob/master/CVE1.gif)
+  - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE1.gif)
   - [x] Steps to recreate: simply go to: `http://wpdistillery.vm/wp-content/themes/twentyfifteen/genericons/example.html#1<img/ src=1 onerror= alert(1)>`
   - [x] Affected source code:
     - [Link 1](https://github.com/Automattic/Genericons/commit/798ac98579dd72dfdb11bdee3e7bebf01cffb1f7)
@@ -39,7 +39,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: Stored XSS
     - Tested in version: 4.2
     - Fixed in version: 4.7.3
-  - [x] GIF Walkthrough: [see here](https://github.com/alfasin/week7-wp/blob/master/CVE2.gif)
+  - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE2.gif)
   - [x] Steps to recreate: edit a post, use the 'text' tab (not visual!) and add the following string: `[embed src='https://www.youtube.com/embed/U2lZIUZ_ZwU\x3csvg onload=alert(1)\x3e'][/embed]` then go to the post-page
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
@@ -58,7 +58,7 @@ Time spent: **X** hours spent in total
     - Vulnerability types: stored xss
     - Tested in version: 4.2
     - Fixed in version: 4.2.13
-  - [x] GIF Walkthrough: [see here](https://github.com/alfasin/week7-wp/blob/master/CVE3.gif)
+  - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE3.gif)
   - [x] Steps to recreate: 
         - upload [xss.mp3](https://github.com/alfasin/week7-wp/blob/master/xss.mp3) to the media tab
         - go to the post and click on "add media
