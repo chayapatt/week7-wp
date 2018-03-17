@@ -8,15 +8,15 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-[!] Title: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)
-    Reference: https://wpvulndb.com/vulnerabilities/7965
-    Reference: https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss-millions-of-wordpress-websites-affected-millions-of-wordpress-websites-affected.html
-    Reference: http://packetstormsecurity.com/files/131802/
-    Reference: http://seclists.org/fulldisclosure/2015/May/41
-    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3429
-[i] Fixed in: 1.2
-
+1. (Required) Vulnerability Name or ID<br>
+[!] Title: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)<br>
+    Reference: https://wpvulndb.com/vulnerabilities/7965<br>
+    Reference: https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss-millions-of-wordpress-websites-affected-millions-of-wordpress-websites-affected.html<br>
+    Reference: http://packetstormsecurity.com/files/131802/<br>
+    Reference: http://seclists.org/fulldisclosure/2015/May/41<br>
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3429<br>
+[i] Fixed in: 1.2<br>
+<br>
   - [x] Summary: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)
     - Vulnerability types: DOM XSS
     - Tested in version: 4.2
