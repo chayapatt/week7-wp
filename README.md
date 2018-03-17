@@ -16,7 +16,7 @@ Time spent: **X** hours spent in total
     Reference: http://seclists.org/fulldisclosure/2015/May/41<br>
     Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-3429<br>
 [i] Fixed in: 1.2<br>
-<br>
+
   - [x] Summary: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)
     - Vulnerability types: DOM XSS
     - Tested in version: 4.2
