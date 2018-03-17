@@ -40,7 +40,12 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: 4.7.3
   - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE2.gif)
-  - [x] Steps to recreate: edit a post, use the 'text' tab (not visual!) and add the following string: `[embed src='https://www.youtube.com/embed/U2lZIUZ_ZwU\x3csvg onload=alert(1)\x3e'][/embed]` then go to the post-page
+  - [x] Steps to recreate: 
+    + edit a post 
+    + use the 'text' tab (not visual!) 
+    + add the following string: `[embed src='https://www.youtube.com/embed/U2lZIUZ_ZwU\x3csvg onload=alert(1)\x3e'][/embed]`
+    + go to the post-page
+    
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
     
