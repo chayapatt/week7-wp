@@ -26,14 +26,14 @@ Time spent: **X** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://github.com/Automattic/Genericons/commit/798ac98579dd72dfdb11bdee3e7bebf01cffb1f7)
     
-2. (Required) Vulnerability Name or ID
-[!] Title: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
-    Reference: https://wpvulndb.com/vulnerabilities/8768
-    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/
-    Reference: https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8
-    Reference: https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html
-    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6817
-[i] Fixed in: 4.2.13
+2. (Required) Vulnerability Name or ID<br>
+[!] Title: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds<br>
+    Reference: https://wpvulndb.com/vulnerabilities/8768<br>
+    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/<br>
+    Reference: https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8<br>
+    Reference: https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html<br>
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6817<br>
+[i] Fixed in: 4.2.13<br>
 
   - [x] Summary: Stored XSS using encoded links in the Post body
     - Vulnerability types: Stored XSS
@@ -44,15 +44,15 @@ Time spent: **X** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
     
-3. (Required) Vulnerability Name or ID
-[!] Title: WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
-    Reference: https://wpvulndb.com/vulnerabilities/8765
-    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/
-    Reference: https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7
-    Reference: https://sumofpwn.nl/advisory/2016/wordpress_audio_playlist_functionality_is_affected_by_cross_site_scripting.html
-    Reference: http://seclists.org/oss-sec/2017/q1/563
-    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6814
-[i] Fixed in: 4.2.13
+3. (Required) Vulnerability Name or ID<br>
+[!] Title: WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata<br>
+    Reference: https://wpvulndb.com/vulnerabilities/8765<br>
+    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/<br>
+    Reference: https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7<br>
+    Reference: https://sumofpwn.nl/advisory/2016/wordpress_audio_playlist_functionality_is_affected_by_cross_site_scripting.html<br>
+    Reference: http://seclists.org/oss-sec/2017/q1/563<br>
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6814<br>
+[i] Fixed in: 4.2.13<br>
 
   - [x] Summary: stored xss using media-file metadata and audio playlist
     - Vulnerability types: stored xss
