@@ -43,10 +43,9 @@ Time spent: **5** hours spent in total
     - Fixed in version: 4.2.13
   - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE3.gif)
   - [x] Steps to recreate: 
-  
-        + upload [xss.mp3](https://github.com/alfasin/week7-wp/blob/master/xss.mp3) to the media tab
-        + go to the post and click on "add media
-        + click on the option of "create audio playlist"
+    + upload [xss.mp3](https://github.com/alfasin/week7-wp/blob/master/xss.mp3) to the media tab
+    + go to the post and click on "add media
+    + click on the option of "create audio playlist"
         
   - [ ] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
