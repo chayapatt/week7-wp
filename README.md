@@ -8,8 +8,8 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID<br>
-[!] Title: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)<br>
+1. (Required) Vulnerability Name or ID: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)
+[!] Title: <br>
     Reference: https://wpvulndb.com/vulnerabilities/7965<br>
     Reference: https://blog.sucuri.net/2015/05/jetpack-and-twentyfifteen-vulnerable-to-dom-based-xss-millions-of-wordpress-websites-affected-millions-of-wordpress-websites-affected.html<br>
     Reference: http://packetstormsecurity.com/files/131802/<br>
@@ -19,21 +19,14 @@ Time spent: **X** hours spent in total
 
   - [x] Summary: Twenty Fifteen Theme <= 1.1 - DOM Cross-Site Scripting (XSS)
     - Vulnerability types: DOM XSS
-    - Tested in version: 4.2
-    - Fixed in version: ?
+    - Tested in version: 4.2 + Twenty Fifteen Theme <= 1.1
+    - Fixed in version: Twenty Fifteen Theme >= 1.2
   - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE1.gif)
   - [x] Steps to recreate: simply go to: `http://wpdistillery.vm/wp-content/themes/twentyfifteen/genericons/example.html#1<img/ src=1 onerror= alert(1)>`
   - [x] Affected source code:
     - [Link 1](https://github.com/Automattic/Genericons/commit/798ac98579dd72dfdb11bdee3e7bebf01cffb1f7)
     
-2. (Required) Vulnerability Name or ID<br>
-[!] Title: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds<br>
-    Reference: https://wpvulndb.com/vulnerabilities/8768<br>
-    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/<br>
-    Reference: https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8<br>
-    Reference: https://blog.sucuri.net/2017/03/stored-xss-in-wordpress-core.html<br>
-    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6817<br>
-[i] Fixed in: 4.2.13<br>
+2. (Required) Vulnerability Name or ID: WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
 
   - [x] Summary: Stored XSS using encoded links in the Post body
     - Vulnerability types: Stored XSS
@@ -49,15 +42,7 @@ Time spent: **X** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
     
-3. (Required) Vulnerability Name or ID<br>
-[!] Title: WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata<br>
-    Reference: https://wpvulndb.com/vulnerabilities/8765<br>
-    Reference: https://wordpress.org/news/2017/03/wordpress-4-7-3-security-and-maintenance-release/<br>
-    Reference: https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7<br>
-    Reference: https://sumofpwn.nl/advisory/2016/wordpress_audio_playlist_functionality_is_affected_by_cross_site_scripting.html<br>
-    Reference: http://seclists.org/oss-sec/2017/q1/563<br>
-    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-6814<br>
-[i] Fixed in: 4.2.13<br>
+3. (Required) Vulnerability Name or ID: WordPress 3.6.0-4.7.2 - Authenticated Cross-Site Scripting (XSS) via Media File Metadata
 
   - [x] Summary: stored xss using media-file metadata and audio playlist
     - Vulnerability types: stored xss
@@ -71,15 +56,24 @@ Time spent: **X** hours spent in total
   - [ ] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
     
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+4. (Optional) Vulnerability Name or ID: WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
+
+  - [x] Summary: stored xss using image filename
+    - Vulnerability types: stored xss
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.10
+  - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE4.gif)
+  - [x] Steps to recreate: 
+      + create a file with the following name: `engizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg`
+      + upload it using tyhe "media" tab
+      + click the uploaded file
+      + click on "View attachment page" link or alternatively go to: http://wpdistillery.vm/?attachment_id=[ID] replace [ID} with the attachment id.<br>
+      + you should get an alert pop-up with the cookie
+      
+  - [x] Affected source code:
+    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
+    
+    
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
