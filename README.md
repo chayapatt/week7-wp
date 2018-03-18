@@ -2,7 +2,7 @@
 
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -67,15 +67,7 @@ Time spent: **X** hours spent in total
     - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
     
     
-1. (Optional) Vulnerability Name or ID: WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)
-[!] Title: 
-    Reference: https://wpvulndb.com/vulnerabilities/8111
-    Reference: https://wordpress.org/news/2015/07/wordpress-4-2-3/
-    Reference: https://twitter.com/klikkioy/status/624264122570526720
-    Reference: https://klikki.fi/adv/wordpress3.html
-    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5622
-    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5623
-[i] Fixed in: 
+5. (Optional) Vulnerability Name or ID: WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)
 
   - [ ] Summary: Post may contain link with onmouseover event 
     - Vulnerability types: stored xss
