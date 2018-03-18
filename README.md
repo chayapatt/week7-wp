@@ -58,7 +58,7 @@ Time spent: **5** hours spent in total
   - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE4.gif)
   - [x] Steps to recreate: 
       + create a file with the following name: `engizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg`
-      + upload it using tyhe "media" tab
+      + upload it using the "media" tab
       + click the uploaded file
       + click on "View attachment page" link or alternatively go to: http://wpdistillery.vm/?attachment_id=[ID] replace [ID} with the attachment id.<br>
       + you should get an alert pop-up with the cookie
