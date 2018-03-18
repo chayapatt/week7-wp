@@ -67,15 +67,29 @@ Time spent: **X** hours spent in total
     - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
     
     
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php) 
+1. (Optional) Vulnerability Name or ID: WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)
+[!] Title: 
+    Reference: https://wpvulndb.com/vulnerabilities/8111
+    Reference: https://wordpress.org/news/2015/07/wordpress-4-2-3/
+    Reference: https://twitter.com/klikkioy/status/624264122570526720
+    Reference: https://klikki.fi/adv/wordpress3.html
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5622
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5623
+[i] Fixed in: 
+
+  - [ ] Summary: Post may contain link with onmouseover event 
+    - Vulnerability types: stored xss
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.3
+  - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE5.gif)
+  - [x] Steps to recreate: 
+      + edit/create a post
+      + paste the following content: `<a href="[caption code=">]</a><a title=" onmouseover=alert('test')  ">link</a>`
+      + any user opens the post
+      + the user passes the mouse on the link
+      + the alert pop-up is triggered      
+  - [x] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/changeset/33359) 
 
 ## Assets
 
