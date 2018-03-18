@@ -47,7 +47,7 @@ Time spent: **5** hours spent in total
     + go to the post and click on "add media
     + click on the option of "create audio playlist"
         
-  - [ ] Affected source code:
+  - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
     
 4. (Optional) Vulnerability Name or ID: WordPress 2.5-4.6 - Authenticated Stored Cross-Site Scripting via Image Filename
@@ -56,7 +56,8 @@ Time spent: **5** hours spent in total
     - Vulnerability types: stored xss
     - Tested in version: 4.2
     - Fixed in version: 4.2.10
-  - [x] GIF Walkthrough: ![](https://github.com/alfasin/week7-wp/blob/master/CVE4.gif)
+  - [x] GIF Walkthrough: 
+    ![](https://github.com/alfasin/week7-wp/blob/master/CVE4.gif)
   - [x] Steps to recreate: 
       + create a file with the following name: `engizhansahinsumofpwn<img src=a onerror=alert(document.cookie)>.jpg`
       + upload it using the "media" tab
@@ -70,7 +71,7 @@ Time spent: **5** hours spent in total
     
 5. (Optional) Vulnerability Name or ID: WordPress <= 4.2.2 - Authenticated Stored Cross-Site Scripting (XSS)
 
-  - [ ] Summary: Post may contain link with onmouseover event 
+  - [x] Summary: Post may contain link with onmouseover event 
     - Vulnerability types: stored xss
     - Tested in version: 4.2
     - Fixed in version: 4.2.3
@@ -93,11 +94,9 @@ List any additional assets, such as scripts or files
 - [WordPress Source Browser](https://core.trac.wordpress.org/browser/)
 - [WordPress Developer Reference](https://developer.wordpress.org/reference/)
 
-GIFs created with [LiceCap](http://www.cockos.com/licecap/).
-
 ## Notes
 
-Describe any challenges encountered while doing the work
+Many of the CVEs were not documented in a way that make it easy to reproduce, some of them were not possible to repro which makes me think that some of these patches were ported back to older versions
 
 ## License
 
